@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: table;
+  width: 100%;
+}
+
+header,
+footer {
+  display: table-row;
+}
+
+.header-table,
+.layout-table,
+.footer-table {
+  width: 100%;
+  height: 100%;
+  border-spacing: 0;
+}
+
+header {
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.navigation {
+  text-align: right;
+}
+
+.navigation-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navigation-menu ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.navigation-menu ul li a {
+  padding: 5px 10px;
+  background-color: #3b82f6;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+main {
+  height: 100%;
+}
+
+.layout-table {
+  table-layout: fixed;
+  height: 100%;
+}
+
+.left-aside {
+  width: 20%;
+  background-color: #fcd34d;
+  padding: 10px;
+  text-align: center;
+}
+
+.right-aside {
+  width: 20%;
+  background-color: #fcd34d;
+  position: relative;
+  text-align: center;
+}
+
+.main-section-cell {
+  width: 60%;
+  vertical-align: top;
+  background-color: #f0fdf4;
+}
+
+.main-section {
+  background-color: #f0fdf4;
+}
+
+.main-section__header {
+  text-align: center;
+  background-color: #86efac;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.main-section__content {
+  text-align: center;
+}
+
+form {
+  display: table;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input {
+  width: 100%;
+  padding: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+footer {
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.footer-logo {
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.aside-right__footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #86efac;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .left-aside,
+  .main-section-cell,
+  .right-aside {
+    display: block;
+    width: 100%;
+  }
+
+  .navigation-menu ul {
+    display: block;
+  }
+
+  .navigation-menu ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
