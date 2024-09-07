@@ -1,0 +1,144 @@
+main {
+  flex: 1 1 auto;
+  display: flex;
+  width: 100%;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1rem;
+  line-height: 1.2em;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100dvh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  background-color: #96acdf;
+  width: 100%;
+  padding: 40px 20px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #000;
+}
+
+.logo {
+  background: #fff;
+  padding: 5px;
+  min-width: 100px;
+  border: 2px solid #000;
+}
+
+aside {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8cf9d;
+  border-left: #000 2px solid;
+  border-right: #000 2px solid;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  padding: 5px;
+  min-width: 100px;
+  border: 2px solid #000;
+}
+
+aside p {
+  padding: 10px;
+}
+
+.main-section {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.main-section__header {
+  background: #cae4c2;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  border-bottom: 2px solid #000;
+}
+.main-section__content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;  
+}
+.aside-right {
+  display: flex;
+  flex-direction: column;
+}
+.aside-right__content {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aside-right__footer {
+  border-top: #000 2px solid;
+  background: #cae4c2;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 5vw;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+  aside {
+    width: 100%;
+  }
+  *:not(input) {
+    border: none !important;
+  }
+  .main-section {
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Галерея - Замовити молитву</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">МОЛИТВИ ОНЛАЙН</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="services.html">Послуги</a></li>
+          <li><a href="contact.html">Контакти</a></li>
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <aside>
+        <p>
+          В нашій галереї ви знайдете зображення святинь, церков та інші духовні
+          символи, які підтримують вірян у молитві.
+        </p>
+      </aside>
+      <section class="main-section">
+        <h2 class="main-section__header">Галерея</h2>
+        <div class="main-section__content">
+          <p>Ось кілька зображень для вашого натхнення:</p>
+          <img
+            src="/src/images/church.png"
+            alt="Церква"
+            width="600"
+            usemap="#churchmap"
+          />
+          <img
+            src="/src/images/church-inside.png"
+            alt="Церква-всередині"
+            width="600"
+          />
+          <img src="/src/images/priest.png" alt="Священик" width="600" />
+
+          <map name="churchmap">
+            <area
+              shape="rect"
+              coords="0, 0, 600, 600"
+              alt="Вхід до церкви"
+              href="/src/services.html"
+            />
+          </map>
+        </div>
+      </section>
+      <aside class="aside-right">
+        <div class="aside-right__content">
+          Контакти: <br />
+          Телефон: 123-456-789 <br />
+          Email: info@molytva.com
+        </div>
+        <p class="aside-right__footer">
+          Години роботи: 9:00 - 18:00 <br />
+          Неділя: вихідний
+        </p>
+      </aside>
+    </main>
+    <footer>
+      <p>&copy; 2024 Замовити молитву у батюшки. Всі права захищені.</p>
+      <h3 class="footer-logo">МОЛИТВИ ОНЛАЙН</h3>
+    </footer>
+  </body>
+</html>
