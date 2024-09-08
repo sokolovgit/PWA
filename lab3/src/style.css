@@ -24,6 +24,7 @@ header {
   font-weight: bold;
   padding: 5px;
   min-width: 100px;
+  color: black;
 }
 
 .navigation-menu {
@@ -90,6 +91,7 @@ aside {
   align-items: center;
   flex-grow: 1;
   text-align: center;
+  padding: 10px;
 }
 
 .main-section {
@@ -115,6 +117,11 @@ aside {
   text-align: center;
 }
 
+.main-section__content>p {
+  max-width: 500px;
+  padding-top: 10px;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -130,7 +137,8 @@ form label {
 }
 
 form input {
-  width: 60%;
+  width: 100%;
+  max-width: 300px;
   padding: 5px;
 }
 
@@ -141,6 +149,7 @@ button {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 button:hover {
@@ -164,18 +173,46 @@ footer p {
   font-weight: bold;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 700px) {
   main {
     flex-direction: column;
   }
-  aside,
+
+  aside {
+    width: 100%;
+    background-color: #fcd34d;
+    order: 2;
+  }
+
+  aside > p {
+    padding: 10px;
+  }
+
   .aside-right {
     width: 100%;
+    background-color: #fcd34d;
   }
+
   .main-section {
     width: 100%;
   }
+
+  .main-section__header {
+    order: 0;
+  }
+
   .navigation-menu {
     flex-direction: column;
+  }
+
+  .navigation-menu ul {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .navigation-menu ul li a {
+    display: block;
+    text-align: center;
+    width: 100px;
   }
 }
