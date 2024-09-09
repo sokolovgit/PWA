@@ -90,19 +90,20 @@ header {
 }
 
 .card__icon {
-  width: 5rem;
-  height: 5rem;
+  width: 10rem;
+  height: 10rem;
   position: absolute;
-  top: -2.5rem;
+  top: -5rem;
   left: 50%;
   transform: translateX(-50%);
-  margin-bottom: 2vh;
+  margin-bottom: 2rem;
 }
 
 .card__header {
   color: #cd37cd;
   font-size: 1.5em;
   padding: 3vh;
+  margin-top: 3vh;
   text-transform: uppercase;
 }
 
