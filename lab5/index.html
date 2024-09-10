@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <!-- section 1 -->
+    <header class="header">
       <a class="logo" href="https://sokolovgit.github.io/PWA">МОЛИТВИ ОНЛАЙН</a>
       <nav class="navigation-menu">
         <ul>
@@ -18,13 +19,14 @@
             <a href="index.html">Меню 2</a>
           </li>
           <li>
-            <a href="index.html">Меню 2</a>
+            <a href="index.html">Меню 3</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <aside>
+      <!-- section  2-->
+      <aside class="aside-left">
         <p>
           Наш сайт пропонує послуги замовлення молитви онлайн. Ви можете
           залишити заявку, і священик виконає молитву за ваші потреби. Ми
@@ -32,8 +34,11 @@
           молитовні послуги для кожного користувача.
         </p>
       </aside>
+
       <section class="main-section">
+        <!-- section 3 -->
         <h2 class="main-section__header">ЗАМОВИТИ МОЛИТВУ</h2>
+        <!-- section 5 -->
         <div class="main-section__content">
           <p>
             Заповніть форму нижче, щоб залишити заявку на молитву. Священик
@@ -42,32 +47,78 @@
 
           <h3>Форма зворотного зв'язку:</h3>
           <form action="/submit" method="post">
-            <label for="name">Ім'я:</label>
-            <input type="text" id="name" name="name" required />
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="message">Повідомлення:</label>
-            <input type="text" id="message" required />
+            <label for="digit">Число</label>
+            <input type="number" id="digit" name="digit" required />
 
             <button type="submit">Відправити</button>
           </form>
+
+          <!-- add form for alignment accordingly to task -->
+          <h3>Вирівнювання блоків:</h3>
+          <form id="alignment-form">
+            <label>
+              <input type="radio" name="alignment" value="aside-left" /> Блок 2
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="alignment"
+                value="aside-right__content"
+              />
+              Блок 4
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="alignment"
+                value="main-section__content"
+              />
+              Блок 5
+            </label>
+          </form>
+
+          <button id="clear-storage">Clear Local Storage</button>
+
+          <section class="list-section">
+            <h3>Нумерований список</h3>
+            <select id="block-selector">
+              <option value="header">Блок 1</option>
+              <option value="aside-left">Блок 2</option>
+              <option value="main-section__header">Блок 3</option>
+              <option value="aside-right__content">Блок 4</option>
+              <option value="main-section__content">Блок 5</option>
+              <option value="aside-right__footer">Блок 6</option>
+              <option value="footer">Блок 7</option>
+            </select>
+
+            <input
+              type="text"
+              id="list-item-input"
+              placeholder="Введіть пункт списку"
+            />
+
+            <button id="add-to-list">Додати пункт</button>
+            <button id="save-list">Зберегти список</button>
+          </section>
         </div>
       </section>
       <aside class="aside-right">
+        <!-- section 4 -->
         <div class="aside-right__content">
           <h3>Контакти:</h3>
           <p>Телефон: 123-456-789 Email: info@molytva.com</p>
         </div>
+        <!-- section 6 -->
         <p class="aside-right__footer">
           Години роботи: 9:00 - 18:00 Неділя: вихідний
         </p>
       </aside>
     </main>
-    <footer>
+    <!-- section 7 -->
+    <footer class="footer">
       <p>&copy; 2024 Замовити молитву у батюшки. Всі права захищені.</p>
       <h3 class="footer-logo">МОЛИТВИ ОНЛАЙН</h3>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

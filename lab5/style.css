@@ -11,7 +11,17 @@ body {
   min-height: 100vh;
 }
 
-header {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  text-align: unset;
+}
+
+.header {
   background-color: lightblue;
   display: flex;
   justify-content: space-between;
@@ -57,7 +67,7 @@ main {
   display: flex;
 }
 
-aside {
+.aside-left {
   width: 20%;
   background-color: #fcd34d;
   display: flex;
@@ -73,7 +83,6 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
 }
 
 .aside-right__footer {
@@ -88,10 +97,20 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   flex-grow: 1;
   text-align: center;
   padding: 10px;
+}
+
+ol {
+  padding-left: 20px;
+  margin: 0;
+  list-style-position: inside;
+}
+
+ol li,
+ol li {
+  word-wrap: break-word;
 }
 
 .main-section {
@@ -109,6 +128,7 @@ aside {
 }
 
 .main-section__content {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,9 +137,11 @@ aside {
   text-align: center;
 }
 
-.main-section__content>p {
-  max-width: 500px;
-  padding-top: 10px;
+.main-section__footer {
+  background-color: #4b805e;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
 }
 
 form {
@@ -156,7 +178,7 @@ button:hover {
   background-color: #2563eb;
 }
 
-footer {
+.footer {
   background-color: lightblue;
   display: flex;
   justify-content: space-between;
@@ -173,12 +195,25 @@ footer p {
   font-weight: bold;
 }
 
+.align-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.align-form__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media screen and (max-width: 700px) {
   main {
     flex-direction: column;
   }
 
-  aside {
+  .aside-left {
     width: 100%;
     background-color: #fcd34d;
     order: 2;
@@ -193,6 +228,14 @@ footer p {
     background-color: #fcd34d;
   }
 
+  .aside-right__footer {
+    order: 1;
+  }
+
+  .aside-right__content {
+    order: 2;
+  }
+
   .main-section {
     width: 100%;
   }
@@ -203,16 +246,5 @@ footer p {
 
   .navigation-menu {
     flex-direction: column;
-  }
-
-  .navigation-menu ul {
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  .navigation-menu ul li a {
-    display: block;
-    text-align: center;
-    width: 100px;
   }
 }
